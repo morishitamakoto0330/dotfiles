@@ -29,11 +29,14 @@ filetype plugin indent on
 NeoBundleCheck
 
 "colorscheme
+
+"autocmd ColorScheme * highlight cTypedef ctermfg=22
+
 colorscheme molokai
 syntax on
 let g:molokai_original = 1
 let g:rehash256 = 1
-set background=dark
+set t_Co=256
 
 " indentLine
 let g:indentLine_color_term = 111
@@ -58,5 +61,9 @@ let g:Tex_ViewRule_pdf = 'evince'
 let g:tex_flavor='latex'
 
 " twitvim
-let twitvim_proxy = "proxy.anan-nct.ac.jp:8080"
-let twitvim_proxy_login = "1132334:makotom0330"
+" let twitvim_proxy = "proxy.anan-nct.ac.jp:8080"
+" let twitvim_proxy_login = "1132334:makotom0330"
+let twitvim_login = "makotom0330_2:makotom0330@mkt"
+
+set shiftwidth=2
+set tabstop=2
