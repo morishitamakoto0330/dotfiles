@@ -20,6 +20,9 @@ NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'grep.vim'
 NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'TwitVim'
+NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'tpope/vim-endwise'
+NeoBundle 'Shougo/neocomplete.vim'
 
 " Required:
 filetype plugin indent on
@@ -28,10 +31,19 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
+"neocomplete
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_ignore_case = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#enable_auto_select = 1
+let g:neocomplete#enable_enable_camel_case_completion = 0
+if !exists('g:neocomplete#keyword_patterns')
+	let g:neocomplete#keyword_patterns = {}
+endif
+let g:neocomplete#keyword_patterns._ = '\h\w*'
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
 "colorscheme
-
-"autocmd ColorScheme * highlight cTypedef ctermfg=22
-
 colorscheme molokai
 syntax on
 let g:molokai_original = 1
