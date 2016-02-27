@@ -11,7 +11,6 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " Let NeoBundle manage NeoBundle
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
-call neobundle#end()
 
 " My Bundles here:
 NeoBundle 'airblade/vim-gitgutter'
@@ -30,6 +29,7 @@ filetype plugin indent on
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck
+call neobundle#end()
 
 "neocomplete
 let g:neocomplete#enable_at_startup = 1
