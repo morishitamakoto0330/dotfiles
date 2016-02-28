@@ -79,3 +79,4 @@ let twitvim_login = "makotom0330_2:makotom0330@mkt"
 
 set shiftwidth=2
 set tabstop=2
+set backspace=indent,eol,start
