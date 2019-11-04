@@ -7,11 +7,6 @@ set shiftwidth=2
 set backspace=indent,eol,start
 set completeopt=menuone
 
-" disable swapfile, undofile and backup
-set noswapfile
-set noundofile
-set nobackup
-
 
 " color sheme
 colorscheme molokai
@@ -120,6 +115,7 @@ endif
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
+imap <C-j> <esc>
 
 
 
